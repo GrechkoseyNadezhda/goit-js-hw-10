@@ -48,7 +48,9 @@ function onCountryInfoMarkup(arrOfCountries) {
   countryList.innerHTML = '';
   countryInfo.innerHTML = countryInfoMarkup;
 }
+
 function onCountryListMarkup(arrOfCountries) {
+  console.log(arrOfCountries);
   const countryListMarkup = arrOfCountries
     .map(el => {
       return templatesCountries(el);
